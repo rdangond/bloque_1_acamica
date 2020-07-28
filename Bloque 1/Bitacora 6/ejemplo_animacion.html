@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Layout</title>
+    <style>
+        * {
+            box-sizing: content-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        body {
+            max-width: 100%;
+        }
+
+        p {
+            background-color: white;
+            height: 5px;
+        }
+
+        .container {
+            background: gray;
+        }
+
+        .inline {
+            display: inline;
+            /* width: 32px; Esta propiedad no aplica para <display inline> */
+            /* height: 32px; Esta propiedad no aplica para <display inline> */
+            background: red;
+            margin: 40px;
+        }
+
+        .box {
+            display: inline-block;
+            width: 32px;
+            height: 32px;
+            background: red;
+            margin: 40px;
+        }
+
+        .box_inline {
+            display: block;
+            width: 32px;
+            height: 32px;
+            background: red;
+            margin: 40px;
+        }
+
+        .flex {
+            display: inline-flex;
+            flex-direction: row-reverse;
+            width: 32px;
+            height: 32px;
+            background: red;
+            margin: 40px;
+        }
+
+        .single {
+            position: fixed;
+            left: 50px;
+        }
+
+        .scale {
+            animation-duration: 2s;
+            animation-name: slidein;
+            transition: ease-in;
+        }
+
+        @keyframes slidein {
+            0% {
+                margin-bottom: 100%;
+                background: gray;
+            }
+
+            50% {
+                margin-bottom: 50%;
+                background: indigo;
+            }
+
+            100% {
+                margin-bottom: 0%;
+                background: #0070ff;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container scale">
+        inline<br>
+        <div class="box">box1</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+    <p></p>
+
+    <div class="container">
+        inline-block<br>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+    <p></p>
+    <div class="container">
+        block<br>
+        <div class="box_inline">box</div>
+        <div class="box_inline">box</div>
+        <div class="box_inline">box</div>
+        <div class="box_inline">box</div>
+    </div>
+    <p></p>
+
+</body>
+
+</html>

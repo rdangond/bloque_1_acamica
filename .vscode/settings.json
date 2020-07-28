@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.port": 5501,
+    "scss.lint.float": "warning",
+    "emmet.showSuggestionsAsSnippets": true,
+    "compile-hero.generate-minified-css": true,
+    "compile-hero.generate-minified-html": true,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 500,
+    "editor.cursorWidth": 3,
+    "editor.fontSize": 13
+}

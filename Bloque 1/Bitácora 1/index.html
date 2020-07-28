@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1080, initial-scale=1.0">
+    <title>Página de ejemplo</title>
+    <!--En esta parte vamos a poner los estilos CSS-->
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+
+        h1 {
+            color: red;
+            font-family: Raleway;
+        }
+
+        h6 {
+            padding-left: 20px;
+            font-family: sans-serif;
+            font-size: 20px;
+        }
+
+        p {
+            font-family: montserrat;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            text-align: center;
+            font-size: 20px;
+            width: 80%;
+        }
+
+        a{
+            font-family: montserrat;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 20px;
+            width: 50%;
+        }
+
+        img {
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 5px 20px;
+            border-style: groove;
+        }
+
+        li {
+            margin-left: 15%;
+        }
+        iframe{
+            border-radius: 10px;
+            max-width: 80%;
+            margin: 20px;
+            border-style: groove;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="user_name">Ramiro Dangond</h1>
+    <h6 id="birth_date">25 de enero de 1977</h6>
+    <p id="description">Mi nombre es Ramiro, aficionado a las motocicletas, a la cocina y los perros</p>
+    <span>
+        <p>Este es el segundo párrafo</p>
+    </span>
+       <iframe lang="es" width="560" height="315" src="https://www.youtube.com/embed/0e8COwvlFUc" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <br>
+    <a href="https://nudo.com.co" target="_blank">Clic aquí para ir a NUDO</a>
+    <ul>
+        <li>
+            <figure>
+                <img src="https://lamoto.com.ar/wp-content/uploads/2020/02/bmw-f-850-gs.jpg" alt="moto">
+                <figcaption>BMW F850gs</figcaption>
+            </figure>
+        </li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+
+    </ul>
+    <script>
+        user_name = document.getElementById('user_name');
+        user_name.addEventListener("click", function () { alert("Bienvenido a mi sitio web") });
+
+        description = document.getElementById('description');
+        description.addEventListener("mouseenter", function () {
+            description.style.color = "black";
+            description.style.backgroundColor = "white";
+        });
+
+        description.addEventListener("mouseout", function () {
+            description.style.color = "white";
+            description.style.backgroundColor = "black";
+        });
+    </script>
+</body>
+
+</html>

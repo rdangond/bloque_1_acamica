@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primer formulario</title>
+    <style>
+        p {
+            font-size: 20px;
+            font-family: fantasy;
+        }
+    </style>
+</head>
+
+<body> 
+    <form action="/form_inputs.php">
+        <p>
+            <label for="user_name">
+                Ingresa tu nombre y apellido: <input id="user_name" type="text" name="user_name" required="yes">
+            </label>
+        </p>
+
+        <p>
+            Selecciona tu país de residencia:
+            <select name="country" id="country" required="yes">
+                <label>
+                    <option value="">Argentina</option>
+                </label>
+                <label>
+                    <option value="">Bolivia</option>
+                </label>
+                <label>
+                    <option value="">Colombia</option>
+                </label>
+                <label>
+                    <option value="">Ecuador</option>
+                </label>
+                <label>
+                    <option value="">Mexico</option>
+                </label>
+                <label>
+                    <option value="">Paraguay</option>
+                </label>
+            </select>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+
+    </form>
+
+</body>
+
+</html>
