@@ -1,0 +1,5 @@
+Tamaños de cajas y posicionamiento:
+Tipos de caja:
+    Border-box: prioriza el tamaño de la caja desde los bordes hacia adentro. Comprime el contenido si se modifica el padding o el borde y no lo deja salir de los límites del tamaño de la caja.
+    Content-box: prioriza el tamaño de la caja basado en el tamaño del contenido. Si se modifica el tamaño del contenido, el padding o el borde, aumenta el tamaño de la caja para incluir las modificaciones.
+
