@@ -1,16 +1,18 @@
 body{
     margin: 20px;
     background-color: gray;
-    margin: 0;
     padding: 0;
 } 
 
 div {
+    position: relative;
+    top: 10%;
+    left:40%;
     box-sizing: content-box;
     background-color: white;
     width: 200px;
     height: 200px;
-    margin: 50px;
+    margin: 0px;
     padding: 50px;
     border-style: solid;
     border-width: 20px;
@@ -18,12 +20,15 @@ div {
 }
 
 .div1 {
-    box-sizing: border-box;
+    position: relative;
+    top: 10%;
+    display: inline-block;
+    box-sizing: content-box;
     background-color: white;
     width: 200px;
     height: 200px;
-    margin: 50px;
-    padding: 200px;
+    margin: 0px;
+    padding: 50px;
     border-style: solid;
     border-width: 20px;
 
