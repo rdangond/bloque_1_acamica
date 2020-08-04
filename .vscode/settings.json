@@ -8,5 +8,6 @@
     "files.autoSaveDelay": 500,
     "editor.cursorWidth": 3,
     "editor.fontSize": 13,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true
 }

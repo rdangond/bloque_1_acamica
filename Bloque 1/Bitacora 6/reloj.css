@@ -13,11 +13,11 @@ body {
 
 .reloj {
     background: #fff url(ios_clock.svg) no-repeat center;
-    background-size: 90%;
-    border-radius: 50%;
+    background-size: 90%; /*esto lo pone más pequeño para que se vea el contenedor gris */ 
+    border-radius: 50%; /* Esto lo vuelve un círculo */
     height: 400px;
     width: 400px;
-    position: relative;
+    position: relative; /* Esto permite mover el tablero desde su posicioón original */
     top: 6%;
     left: 6%;
 }

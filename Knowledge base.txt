@@ -1,5 +1,22 @@
 Tamaños de cajas y posicionamiento:
 Tipos de caja:
+    
     Border-box: prioriza el tamaño de la caja desde los bordes hacia adentro. Comprime el contenido si se modifica el padding o el borde y no lo deja salir de los límites del tamaño de la caja.
+    
     Content-box: prioriza el tamaño de la caja basado en el tamaño del contenido. Si se modifica el tamaño del contenido, el padding o el borde, aumenta el tamaño de la caja para incluir las modificaciones.
+
+Display: Define como se ve la caja dentro de su padre. Puede ser internamente o externamente. 
+    
+    Externamente quiere decir cómo se comporta con los otros elementos. Hay dos clases: block e inline. Si se define la propiedad como "none", se oculta el elemento.
+        
+        block: Se estiran toda la linea dentro del viewport hasta donde pueden y ocupan todo el ancho. <div> <p> y <header> son ejemplos de elementos block-level. 
+        
+        inline: El elemento ocupa el mínimo de espacio dentro de la línea donde se ubica y NO se estira hasta donde puede. Es decir que "fluye"  con el contenido (flow). Se puede ubicar un elemento inline dentro de un elemento block, como un enlace dentro de un párrafo (<p>.... <a ref="" /> ... </p>).
+        <a> y  <span> son ejemplos de inline.
+        inline no reconoce las propiedades de tamaño.
+
+        inline-block: Es una combinación de las anteriores. Cómo tiene la propiedad block, permite ponerle propiedades de tamaño y separación al elemento (width y height se asignan y padding y margin se respetan). Adicionalmente, cómo tiene la propiedad inline, se puede ubicar en el flujo del layout sin cambiar de línea, es decir que puede estar ubicado junto a otros elementos porque no va a ocupar todo el ancho del viewport.
+    
+
+Superponer elementos
 
