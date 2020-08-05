@@ -1,0 +1,69 @@
+/* con el símbolo $ se pueden crear variables reusables */
+$h1-font: arial, sans
+$h1-color: #0070ff
+$h1-w: bolder
+
+$h2-font: raleway, sans, arial
+$h2-color: #684184
+
+$p-font: times, sans
+$p-size: 16px
+
+*
+    margin: 0
+    padding: 0
+/* En sass no se necesitan semi-colon o corchetes. */
+section
+    padding: 10px
+    display: inline-block
+    width: 45%
+    margin: 20px 0
+    height: 200px
+/* Cuando está creada la variable, se puede agregar a cualquier propieda css y el preprocesador la compila luego para css */
+h1
+    font-family: $h1-font
+    color: $h1-color
+    font-weight: $h1-w
+h2 
+    font-family: $h2-font
+p 
+    font-family: $p-font
+    font-size: $p-size
+header
+    position: sticky
+    background: lightgrey
+    top: 0
+li
+    font-family: $h2-font
+    color: $h2-color
+    font-weight: bolder
+    text-decoration: underline
+    display: inline
+    padding: 0 15px
+.logo_container
+    display: inline
+
+ul
+    float: right
+    display: inline
+    margin-right: 30px
+    padding-top: 40px
+nav
+    height: 100px
+    padding: 10px
+footer
+    margin-top: 40px
+    font: $h1-font 
+    color: $h1-color
+    font-weight: $h1-w
+/* Con el símbolo % se pueden agrupar selectores y propiedades reusables. Se pueden anidar directamente otros selectores <p> sin tener que crear todo el código de nuevo y adopta las propiedades del padre y agrega las nuevas.  LAs propiedades del selector anidado reemplazan las del padre */
+%banner
+    margin-top: 40px
+    font: $h1-font 
+    color: $h1-color
+    font-weight: $h1-w
+    p 
+        font-family: $p-font
+/* La función @extend trae los selectores del extend (%).
+.banner
+    @extend %banner

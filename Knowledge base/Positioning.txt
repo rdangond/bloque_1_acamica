@@ -18,5 +18,5 @@ Display: Define como se ve la caja dentro de su padre. Puede ser internamente o 
         inline-block: Es una combinación de las anteriores. Cómo tiene la propiedad block, permite ponerle propiedades de tamaño y separación al elemento (width y height se asignan y padding y margin se respetan). Adicionalmente, cómo tiene la propiedad inline, se puede ubicar en el flujo del layout sin cambiar de línea, es decir que puede estar ubicado junto a otros elementos porque no va a ocupar todo el ancho del viewport.
     
 
-Superponer elementos
+
 

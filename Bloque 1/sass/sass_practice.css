@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* con el símbolo $ se pueden crear variables reusables */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* En sass no se necesitan semi-colon o corchetes. */
+section {
+  padding: 10px;
+  display: inline-block;
+  width: 45%;
+  margin: 20px 0;
+  height: 200px;
+}
+
+/* Cuando está creada la variable, se puede agregar a cualquier propieda css y el preprocesador la compila luego para css */
+h1 {
+  font-family: arial, sans;
+  color: #0070ff;
+  font-weight: bolder;
+}
+
+h2 {
+  font-family: raleway, sans, arial;
+}
+
+p {
+  font-family: times, sans;
+  font-size: 16px;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  background: lightgrey;
+  top: 0;
+}
+
+li {
+  font-family: raleway, sans, arial;
+  color: #684184;
+  font-weight: bolder;
+  text-decoration: underline;
+  display: inline;
+  padding: 0 15px;
+}
+
+.logo_container {
+  display: inline;
+}
+
+ul {
+  float: right;
+  display: inline;
+  margin-right: 30px;
+  padding-top: 40px;
+}
+
+nav {
+  height: 100px;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  font: arial, sans;
+  color: #0070ff;
+  font-weight: bolder;
+}
+
+/* Con el símbolo % se pueden agrupar selectores y propiedades reusables. Se pueden anidar directamente otros selectores <p> sin tener que crear todo el código de nuevo y adopta las propiedades del padre y agrega las nuevas.  LAs propiedades del selector anidado reemplazan las del padre */
+.banner {
+  margin-top: 40px;
+  font: arial, sans;
+  color: #0070ff;
+  font-weight: bolder;
+}
+
+.banner p {
+  font-family: times, sans;
+}
+
+/* La función @extend trae los selectores del extend (%). */
+/*# sourceMappingURL=sass_practice.css.map */
