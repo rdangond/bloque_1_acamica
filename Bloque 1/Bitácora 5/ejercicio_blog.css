@@ -16,12 +16,11 @@ nav {
 .logo_container {
   display: inline-block;
 }
-/* Esta propiedad hace que la lista completa use la propiedad inline-box para que se ubique en la linea del logo pero sin romper la línea y la flota a la derecha. */
+/* Esta propiedad hace que la lista completa flote a la derecha. */
 ul {
-  display: inline-block;
   margin: 20px 0;
   list-style: none;
-  float: right;
+  float: right; 
 }
 /* Esta propiedad hace que cada elemento de la linea se vea en linea y no en bloque con inline */
 li {
