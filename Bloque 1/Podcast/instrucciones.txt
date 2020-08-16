@@ -1,0 +1,267 @@
+El contenido está dispuesto en estas 4 secciones:
+
+Descripción general del proyecto.
+
+Entregable y recursos : aquí encuentras el ejemplo de referencia de lo que esperamos de tu proyecto, y los recursos para realizarlo.
+
+Consignas : te ofrecemos una guía orientativa (pero no obligatoria) de pasos para que trabajes tu proyecto.
+
+Checklist con el que los evaluadores profesionales externos evaluarán tu trabajo.
+
+Descripción general
+En este proyecto deberás construir un sitio web estático responsivo utilizando únicamente código HTML y CSS.
+
+Desde el sitio vas a poder escuchar podcasts reales que estarán embebidos junto con imágenes y texto relacionados a su contenido. Trabajaremos con una visión mobile first, por lo que comenzaremos por la vista mobile, pero adoptaremos la responsividad a pantallas más grandes para que funcione en todas ellas.
+
+El objetivo del proyecto es replicar un esquema laboral de un/a Front-End Developer, por lo que debes realizar tu implementación para que quede igual al diseño de referencia que te proveeremos.
+
+Entregable y recursos
+Maqueta de la web de un podcast sobre el tema que más te guste, aplicando todo el conocimiento que incorporaste sobre HTML y CSS.
+
+Recursos: https://s3.amazonaws.com/resources.acamica.com/contenidos/DWFS-19/recursos_estudiantes/Recursos+proyectos/Proyecto1/landingUI_desktop_mobile_kit.zip
+
+Aquí encontrarás los recursos necesarios para realizar el proyecto. Incluye un archivo index.html, con vistas desktop y mobile, y el kit de UI.
+
+Abre el archivo index.html en un navegador. Verás las vistas desktop y mobile, así como el UI KIT (User Interface) que contiene las transformaciones de los elementos cuando el usuario interactúa con ellos.
+
+En el centro de cada pantalla verás el prototipo con todos los elementos. Presiona sobre cualquiera de ellos y se abrirá una barra lateral a tu derecha indicando su posición, tamaño, color y estilos finales. Si haces click sobre un recurso (por ejemplo, una imagen), al final de la barra vertical bajo el título EXPORTABLE aparecerá el link para descargarlo.
+
+Uso de librerías
+No está permitido el uso de librerías, plugins o cualquier otro recurso que no esté especificado en esta guía, ya que el objetivo del proyecto es validar los conocimientos de base.
+
+Consignas
+A continuación, te ofrecemos una guía de pasos sugeridos para construir tu proyecto (¡no es obligatorio que los sigas estrictamente en este orden!).
+
+a) Crea la estructura de tu proyecto
+
+1. Crea el directorio. No utilices símbolos ni caracteres especiales en el nombre.
+
+2. Crea el archivo index.html con la estructura básica de un documento HTML 5 y ubícalo dentro del directorio del proyecto.
+
+3. Crea los subdirectorios images y styles dentro del directorio principal (aquí colocarás los recursos de tu proyecto).
+
+4. Descarga las imágenes de los recursos del prototipo y agrégalas al directorio images.
+
+5. Crea el archivo styles.css y agrega su ruta al de index.html, junto con la de la librería Font Awesome . Recomendamos utilizar las opciones de CDN para evitar incluir archivos adicionales al proyecto.
+
+6. Incluye las fuentes tipográficas indicadas en los recursos desde Google Fonts e impórtalas en el archivo styles.css.
+
+7. Agrega la etiqueta dentro del en index.html con el nombre de tu sitio.
+
+8. Tamaño de fuentes: El diseño está expresado en píxeles. Puedes utilizar esas medidas o transformarlo a EM o REM de acuerdo a tu conveniencia.
+
+9. !important: Evita el uso de !important en tu CSS. Revisa la especificidad si algún elemento no se comparta toma los valores que estás aplicando
+
+10. Consola: Revisa asiduamente la consola de tu navegador en busca de errores.
+
+11. Sugerencia: crea un ancho de máxima con max-width para que tus contenedores no crezcan más de lo deseado,
+
+https://lh4.googleusercontent.com/Mt8HWStzeSZAiL342uKeLRhOis5ROqRkusHeG9bSkpcErIRnuJpXLDyLwrBDQ82l4Vh2X5oNneR2aZVt7XpQkOX8-8lEcJylQKgojunAMoy_5HXBvzNmADw9zppA3BxkDGP8_QDo
+Checkpoint
+
+Agrega algún elemento al <body> de tu documento HTML y alguna regla de estilo en styles.css.
+
+Abre el archivo index.html en un navegador y confirma que en este se represente correctamente tu código.
+
+Un ejemplo podría ser una etiqueta <h1> con el nombre de tu sitio, a la que asignes alguna de las tipografías de Google Fonts.
+
+También puedes probar con una etiqueta <i> que contenga alguna clase de la librería Font Awesome para verificar que estas dependencias estén agregadas correctamente.
+
+b) Maqueta los primeros elementos
+
+Vamos a empezar por el primer componente que vemos en la pantalla siguiendo el orden convencional de lectura: la barra de navegación.
+
+En la vista mobile del prototipo: Identifica los distintos elementos dentro del navbar e imagínate qué etiquetas vas a necesitar para representarlos.
+
+Escribe el código HTML necesario para que aparezcan en la pantalla sin preocuparte aún por el estilado.
+
+Pista: puedes imaginarte que el menú hamburguesa contendrá elementos que aparecerán al hacer tap sobre él. Buscalos en el UI Kit, donde se muestra cómo se debe ver el menú desplegado
+
+Si abres el documento index.html tal vez veas algo parecido a esto:
+
+https://lh4.googleusercontent.com/yhUUd9hQUUdeE1kw_kBpOcdRcvvI_VPw1zBtYuStoEuyJVJHugmJfmBWmPLc4D8xVhFeFEvOIavkcQgqdX5WVTFgu729njdSdjHB5GjwBZvvTgM8VC4WE2SFPcoNeBbV_Yiasw7U
+No te asustes, en el próximo paso vas a agregar las reglas de estilo necesarias para que los elementos tengan el tamaño, la posición y el comportamiento adecuados.
+
+Para dar estilo a la barra de navegación, empieza por disponer los elementos como deberían quedar en la vista mobile. ¿Qué grupos de elementos están alineados horizontalmente y cuáles en forma vertical? ¿Están incluidos dentro de un mismo elemento contenedor o necesitas crear uno? Puedes utilizar las propiedades de Flexbox para lograr que se vean como querés.
+
+Agrega el logo a tu sitio. En el kit encontrarás la imagen en formato svg, puedes incluirla a través de un tag o como imagen de fondo.
+
+c) Agrega comportamiento al menú
+
+El camino que te presentamos aquí para manejar el comportamiento de la barra de menú no es el único. El menú de nuestra barra de navegación está diseñado para que, al ser renderizado en dispositivos móviles, se expanda y contraiga mostrando y ocultando las secciones del sitio. Si bien es algo que se suele realizar con Javascript, también podemos resolver con los lenguajes que estudiamos hasta ahora.
+
+Agrega un input de tipo checkbox que no sea visible, con un label que contenga el carácter correspondiente a las tres barras del menú.
+
+Indica a través de los selectores y pseudoclases necesarios que, cuando esté seleccionado el checkbox, los elementos hasta ahora ocultos del navbar pasen a estar visibles.
+
+Pista: existe una pseudoclase :checked que puede serte útil.
+
+d) Adapta los estilos para pantallas más grandes
+
+Ya tienes tu navbar preparado para mobile. Es momento de revisar otras resoluciones.
+
+Abre el inspector de tu navegador.
+
+Mediante el visualizador de dispositivos revisa las diferentes resoluciones.
+
+Ajusta cada resolución con media queries.
+
+Desafío Opcional
+
+Toma los componentes de desktop y mobile para crear tu propia versión para tamaños intermedios (tablet).
+
+Checkpoint  
+
+Ya tienes tu navbar completo. Antes de continuar, verifica que la visualización en los diferentes viewports y navegadores que tienes instalado en tu PC es correcta.
+
+e) Sección de episodios
+
+Ahora que maquetaste tu primer componente, estás listo/a para pasar a las secciones del sitio.
+
+Piensa qué etiquetas semánticas te pueden servir como divisoras de estas unidades de contenido. Lo primero que vemos es el título del sitio con una bajada y un botón.
+
+Compara las vistas desktop y mobile: en una de ellas el título está en una línea mientras que en la otra se ve en dos. Para lograr esto, parte del texto podría estar dentro de un elemento HTML inline con las reglas CSS necesarias que te permitan lograr lo deseado según el tamaño del dispositivo.
+
+Esta sección del sitio propone algunos desafíos. Como puedes ver en el diseño, la sección tiene un color de fondo diferente a los componentes hasta ahora maquetados y, además, está delimitada por líneas oblicuas.
+
+Agrega el título de la sección y completa el código necesario para que tenga la tipografía, y los colores de texto y fondo correspondientes.
+
+Agrega el código entre etiquetas: Busca tu episodio favorito en Spotify e inserta el código de <iframe> en tu landing page.
+
+Seguramente veas algo como esto:
+
+https://lh5.googleusercontent.com/aHLjjDmcjTa_CiCYNXFPURX72fz9yq0RfwPh_Oxh_9R8XHtzNYl6e48UyAPmsT83iGHr__AbxJjPnpxoJ5IsTMkp_NjOfGxqnJKrviksB_EyN5a603lKknTpUpFn_yBYMYDM0aYG
+¿Cómo harías para que los límites del elemento contenedor de la sección sean líneas oblicuas en vez de rectas?
+
+https://lh4.googleusercontent.com/8-waHySoocK9qs6X1uLGG3K4z42_Ngzmof0WIIKq1f_AQT_c25rlTtm5i00PABaxBhAnbGI49tkwgZ3gHGbGSu59aquzK0tY_fNU1ixngmsMQDvl1TTmZxatJADUsRS8c7f_UnaU
+Pista: En este artículo encontrarás una solución posible.
+
+? Completa el código necesario para que los episodios estén dispuestos en filas de uno o más elementos según el tamaño de pantalla del dispositivo, como se ve en los recursos descargables. Para esto puedes utilizar Flexbox o CSS Grid.
+
+Checkpoint
+
+Comprueba que los reproductores embebidos funcionen correctamente.
+
+Verifica que la disposición de cada reproductor en los diferentes viewports sea correcta.
+
+Comprueba nuevamente tu navbar.
+
+f) Superposición de elementos
+
+La sección ‘De dónde venimos’ plantea un desafío nuevo. La imagen del teléfono se superpone con la sección anterior.
+
+Realiza tu implementación para que quede igual al diseño de referencia. Hay una propiedad de CSS que permite desplazar elementos por los ejes X e Y.
+
+Checkpoint
+
+Verifica en los diferentes viewports que la disposición de los elementos de esta nueva sección sea correcta, y comprueba que tu imagen no pise contenido de otras secciones
+
+Comprueba de las secciones ya maquetadas funcionen.
+
+g) Trabajando con imágenes
+
+La siguiente sección es ‘ Invitadas/os estelares’ y plantea una grilla de imágenes.
+
+Crea un contenedor para cada imagen que te permita disponer su espacio y limitar su tamaño.
+
+Utiliza CSS Grid o Flexbox para armar la grilla de contenedores de las imágenes.
+
+Con los media queries haz los ajustes necesarios para tus breakpoints.
+
+Resuelve la sección ‘ Algunos de nuestros temas’ creando otros 4 contenedores para incluir los iconos en formato SVG con su descripción.
+
+Checkpoint
+
+Comprueba el correcto funcionamiento de esta sección en los diferentes viewports.
+
+No olvides comprobar el resto de las secciones ya maquetadas.
+
+h) Casi listo, solo nos queda el Footer
+
+Solo nos resta el footer que cuenta con un botón de contacto y los íconos de redes sociales.
+
+En el header maquetaste el botón “Conoce más”. Es momento de reutilizar las clases para el botón de contacto.
+
+El footer está compuesto por un texto e íconos de la librería Font Awesome. Agrega las etiquetas necesarias para mostrar los íconos.
+
+i) Links
+
+Los elementos del menú, los botones y los íconos del footer deberían ser enlaces a secciones dentro del sitio o a URLs externas.
+
+Utiliza el atributo href para completar tus enlaces según corresponda. En los recursos están especificados estilos al hacer hover sobre ciertos elementos.
+
+Agrega las reglas de CSS con las pseudoclases necesarias para aplicar estos estilos.
+
+Si quieres, puedes animar estos efectos aplicando transiciones.
+
+Checkpoint
+
+Comprueba que los botones y links de tu sitio funcionen de forma adecuada.
+
+Chequea que el comportamiento de los hovers sobre los elementos correspondientes sea el esperado.
+
+Modifica el tamaño de la ventana de tu navegador y asegúrate de que tu sitio sea responsivo.
+
+Ya tienes maquetado tu sitio, ahora es momento de compartirlo con el mundo.
+
+j) Pon tu sitio online
+
+Registrate en GitHub
+
+Crea un repositorio: crea un repositorio con tu nombre de usuario y añade .github.io al final.
+
+Clona localmente tu repositorio: baja el repositorio a tu computadora con git clone url_del_repositorio
+
+Copia tus archivos: copia todo tu desarrollo en tu directorio local.
+
+Añade los archivos: añade todos los archivos a tu repositorio con git add .
+
+Commit: crea tu primer commit con git commit -a -m “mensaje descriptivo”
+
+Push: Pushea tus archivo al branch master con git push
+
+Navega tu sitio: Ingresa a https://tu_usuario.github.io y asegura la correcta visualización de tu sitio.
+
+Checkpoint
+
+Revisa nuevamente tu sitio sobre el servidor antes de la entrega.
+
+¡Felicitaciones!
+¡Si llegaste hasta aquí, quiere decir que tu sitio ya esta en vivo!
+
+Comparte la URL con tus conocidos para que vean tu sitio web funcionando.
+
+https://lh6.googleusercontent.com/NXnTkvCoQK1tM_CovlxVcAWz4KcG6iKr0Di9nP0PW5zMyipGAoczS8wtj9YgdmiJaC0Mg1wfXePVnLMziCEnFHT0919EfmhwbIYiiQhTAV_zQa6kCVYcijzvhEo3DIipozUHnyPA
+Checklist
+Antes de subir tu proyecto a la plataforma Acámica para ser evaluado, realiza las siguientes verificaciones (son las que los/as evaluadores/as tendrán en consideración al momento de corregir tu trabajo).
+
+Verifica que el .html no tenga errores , utilizando alguna herramienta de validación (por ejemplo: https://validator.w3.org/ ).
+
+El proyecto debe estar organizado con diferentes directorios para las imágenes y los estilos.
+
+El sitio debe estar subido a un servidor con una url pública.
+
+Crea un archivo ZIP con toda tu estructura y un archivo .txt con la URL de tu sitio online y la URL de tu repositorio.
+
+Condiciones para aprobar
+Deben utilizarse etiquetas semánticas en títulos, secciones, listas, y en todos los casos donde los elementos cumplan una función que se corresponda con una etiqueta existente.
+
+Debe haber al menos un ícono con clases de la librería Font Awesome o similar.
+
+Se deben utilizar al menos dos tipografías importadas.
+
+Las imágenes deben contener el atributo alt con información adecuada.
+
+Debe haber al menos una sección con límites no rectangulares (en las consignas se utilizan líneas oblicuas).
+
+Los reproductores de los episodios deben estar embebidos directamente desde Spotify con un tag tipo <iframe> .
+
+Debe haber al menos una imagen superpuesta con un elemento que no la contenga (en las consignas se muestra el ejemplo de la imagen del teléfono en la sección ‘De dónde venimos’).
+
+Debe haber un navbar con menú hamburguesa que se expanda y contraiga dinámicamente utilizando únicamente HTML y CSS.
+
+contar con anchors que enlacen la barra de navegación con las secciones correspondientes y los íconos de las redes con sitios externos.
+
+Condición 10: Debe haber al menos un cambio de estilo a través de hovers.
+
+El objetivo del proyecto es replicar un esquema laboral de un/a Front-End Developer, por lo que el diseño debe ser igual al de referencia.
